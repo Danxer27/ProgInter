@@ -1,0 +1,112 @@
+/* Daniel Joel Corona Espinoza */
+body {
+    font-family: "Open Sans", sans-serif;
+  }
+  
+  nav {
+    font-size: 1.5rem;
+    /*1.- Agregar flex y hacer el espaciado igual entre los componentes con el primer objeto al inicio, último al final */
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  h1 {
+    font-size: 6rem;
+    text-align: center;
+  }
+  
+  ul,
+  li {
+    display: inline;
+    margin: 0;
+    padding: 0;
+  }
+  
+  ul {
+    /*2*/
+    display: flex;
+    flex-grow: 1;
+    max-width: 90%;
+    justify-content: space-evenly;
+  }
+  
+  /*3*/
+  @media (min-width: 150px) and (max-width: 699px)
+   {
+    h1 {
+      color: blue;
+    }
+  }
+  
+  /*4.-Altura máxima de 800 pixeles */
+  @media (max-height: 800px){
+    a {
+      color: black;
+      font-size: 1rem;
+    }
+    h1 {
+      color: cyan;
+    }
+    a:hover {
+      font-size: 3rem;
+      color: cyan;
+    }
+  }
+  
+  
+  @media (min-width: 700px) {
+    h1 {
+      color: orange;
+    }
+  }
+  
+  /* 6 */
+  @media (min-width: 1000px)
+   {
+    h1 {
+      color: yellow;
+    }
+  }
+  
+  /* 7 */
+  @media (orientation: landscape)
+  {
+    body {
+      background-color: grey;
+    }
+  }
+  
+  /* 8 */
+  @media (min-width: 1500px) {
+    h1 {
+      color: green;
+    }
+    body {
+      background-size: cover;
+      background-image: url("https://images.unsplash.com/photo-1737304697097-62a820f71964?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    }
+  }
+  
+  /* 9 */
+  @media (max-width: 750px) {
+    h1 {
+      font-size: 4rem;
+    }
+    nav,
+    nav ul{
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  
+  /* 10 */
+  @media (max-width: 550px){
+    body {
+      font-size: 3em;
+      font-family: "Roboto", serif;
+    }
+    h1 {
+      font-size: 2.5rem;
+    }
+    
+  }
