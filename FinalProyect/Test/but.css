@@ -1,0 +1,167 @@
+body {
+    text-align: center;
+    font-size: 3rem;
+    background: linear-gradient(to right, green, greenyellow) 
+  }
+  
+  h1 {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  }
+  
+  button {
+    border-radius: 50%;
+    width: 10rem;
+    height: 10rem;
+    font-size: 4rem;
+  }
+  
+  section {
+    border: 1rem;
+    border-style: solid;
+    margin-left: 5rem;
+    margin-right: 5rem;
+    padding: 1rem;
+    border-color: slategray;
+  }
+  
+  #button1 {
+    transition-duration: 3s;
+  
+  }
+  
+  #button1:hover {
+    transform: rotate(6.28rad);
+    transform-origin: left top;
+  }
+  
+  #button2 {
+    transition-duration: 1s;
+  }
+  
+  #button2:hover {
+    opacity: 50%;
+    transform: skew(40deg);
+    background-color: rgb(218, 236, 230);
+    color: blue;
+  }
+  
+  #button3 {
+    transition-duration: 1s;
+  }
+  
+  #button3:hover {
+    color: white;
+    background-color: black;
+    transition-timing-function: ease-in-out;
+    font-style: oblique;
+  }
+  
+  #button4 {
+    transition-duration: 3s;
+    transition-timing-function: cubic-bezier(0.23, 1, 0.320, 1);
+  }
+  
+  #button4:hover {
+    transform: rotateX(5turn);
+    opacity: 0%;
+    border-style: solid;
+    border-color: purple;
+    border-width: 2rem;
+  }
+  
+  #button5 {
+    transition-duration: 3s;
+    transition-timing-function: steps(5, end);
+  }
+  
+  #button5:hover {
+    transform: scale3d(.01, .01, 1);
+    background-color: green;
+    border: 3rem greenyellow solid;
+  }
+  
+  #button6 {
+    transition-duration: 2s, 10s;
+    transition-property: transform, background-color;
+    transition-timing-function: ease-out, steps(5, end);
+  }
+  
+  #button6:hover {
+    transition-duration: 1s;
+    background-color: rgb(68, 0, 255);
+    transform: translate(50%, 50%);
+  }
+  
+  @keyframes button7 {
+    from{
+      background-color: black;
+      color: white;
+    }to{
+      background-color: white;
+      color: black;
+    }
+  }
+  
+  #button7:hover {
+    animation-name: button7;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: 3;
+    animation-direction: alternate;
+  }
+  
+  @keyframes button8 {
+    0%{
+      transform: translateY(0%);
+    }to{
+      transform: translateY(100%);
+    }
+  }
+  
+  #button8:hover {
+    animation-name: button8;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: 3;
+    animation-direction: alternate;
+  }
+  
+  #button8:active {
+    animation-play-state: paused;
+  }
+  
+  @keyframes button9 {
+    from, to{
+      background-color: red;
+    }33%{
+      background-color: green;
+    }66%{
+      background-color: blue;
+    }
+  }
+  
+  #button9:hover {
+    animation-name: button9;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+  }
+  
+  @keyframes button10 {
+    from,32%,to {
+      background-color: red;
+    }33%,65%{
+      background-color: green;
+    }66%,99%{
+      background-color: blue;
+    }
+  }
+  
+  #button10:hover {
+    animation-name: button10;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+  }

@@ -1,0 +1,29 @@
+#inicio {
+    background-color: #4913a0;
+}
+
+#cardsMenu {
+    margin: 60px;
+}
+
+#mainNav {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 80px;
+    border: 50px;
+}
+
+.card {
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+
+.col-md-3 {
+    padding: 10px;
+    width: 85%;
+}
+
+#searchButton {
+    margin-right: 8px;
+} 
